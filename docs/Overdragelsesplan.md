@@ -3,13 +3,18 @@
 ```mermaid
 gantt
     dateFormat  YYYY-MM-DD
-    title       OS2Forms efterårsrelease 2025
+    title       Overdragelse af OS2fildeling 2026
     excludes    weekends
     tickInterval 1week
     %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
 
-    section Overdragelse
-      
+    section Forvaltning
+    Forberedelsesmøde i koordinations              :crit, milestone, a1, 2026-05-01, 0d
+    udvikling af løsningen                          :des1, 2026-05-01, 2026-08-01
+    Test af løsningen                          :des2, after des1, 2026-12-01
+    start på overdragelse                                        :vert, 2026-09-01 
+
+section Løsning
     Forberedelsesmøde i koordinations              :crit, milestone, a1, 2026-05-01, 0d
     udvikling af løsningen                          :des1, 2026-05-01, 2026-08-01
     Test af løsningen                          :des2, after des1, 2026-12-01
